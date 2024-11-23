@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Outfit:wght@100..900&display=swap');
+
+
+body{
+    background: linear-gradient(black, #100239,black);
+    background-repeat: no-repeat;
+    
+    color: white;
+}
+
+  /* Navbar */
+  .navbar {
+    padding: 1rem 0;
+  }
+  
+  .navbar .logo {
+    font-size: 3rem;
+    font-family: 'Brush Script MT', cursive;
+  }
+  
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  
+  .navbar ul li:hover {
+    color: #94a3b8;
+  }
+  
+  /* Hero Section */
+  .hero-sec h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  
+  .hero-sec p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #cbd5e1;
+  }
+  
+  .hero-sec span {
+    color: #60a5fa;
+  }
+  
+  /* Options Section */
+  .options button {
+    transition: all 0.3s ease;
+  }
+  
+  .options button:hover {
+    color: #cbd5e1;
+  }
+  
+  /* Blur Effect */
+  .options .blur-effect {
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 640px) {
+    .hero-sec h1 {
+      font-size: 3rem;
+    }
+  
+    .hero-sec p {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-sec h1 {
+      font-size: 4rem;
+    }
+  
+    .hero-sec p {
+      font-size: 1.5rem;
+    }
+  }
+  
