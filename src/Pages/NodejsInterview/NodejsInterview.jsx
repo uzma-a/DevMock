@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './NodejsInterview.css';
-import ai_pic from '../../assets/ai_interviewer_pic.jpg';
+import ai_robot from '../../assets/ai_robot.png';
 import sound_wave from '../../assets/sound_wave.gif';
 
 const NodejsInterview = () => {
@@ -227,7 +227,7 @@ const NodejsInterview = () => {
             {isInterviewStarted && (
                 <div className="ai-face mt-6 sm:mt-10 relative flex flex-col items-center text-center">
                     <img
-                        src={ai_pic}
+                        src={ai_robot}
                         alt="AI Face"
                         className="w-48 sm:w-60 lg:w-72 h-auto rounded-full"
                     />

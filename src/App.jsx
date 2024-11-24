@@ -16,23 +16,7 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        console.log("Logged In");
-        // Redirect to "/" only if user is not on /starting
-        if (location.pathname === "/login") {
-          navigate('/');
-        }
-      } else {
-        console.log("Logged Out");
-        // Redirect to "/login" only if user is not on the login page
-        if (location.pathname !== "/login") {
-          navigate('/login');
-        }
-      }
-    });
-  }, [navigate, location]);
+  
 
   return (
     <>

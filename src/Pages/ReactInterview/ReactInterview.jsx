@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './ReactInterview.css';
-import ai_pic from '../../assets/ai_interviewer_pic.jpg';
+import ai_robot from '../../assets/ai_robot.png';
 import sound_wave from '../../assets/sound_wave.gif';
 
 const ReactInterview = () => {
@@ -28,7 +28,7 @@ const ReactInterview = () => {
     'What is Redux, and how does it work with React?',
     'What is React.memo, and how does it help with performance optimization?',
     'How do you optimize the performance of a React application?'
-];
+  ];
 
 
 
@@ -121,45 +121,45 @@ const ReactInterview = () => {
 
   return (
     <div className="bg-slate-950 min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-10">
-     <div className="nav flex flex-col items-center text-center p-4 sm:py-8">
-  <Link to="/">
-    <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent cursor-pointer py-2 sm:py-3">
-      React.Js Interview
-    </div>
-  </Link>
-  <p className="text-blue-400 font-bold mt-4 sm:mt-6 lg:mt-10 text-base sm:text-lg lg:text-xl">
-    Prepare to ace your
-    <span className="bg-gradient-to-t px-1 from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold">
-      React.Js interview
-    </span>
-    with AI powered assistance!
-  </p>
+      <div className="nav sm:py-8 flex flex-col items-center text-center">
+        <Link to="/">
+          <div className="text-4xl sm:px-3 py-3 sm:mt-2 sm:text-3xl lg:text-7xl font-extrabold bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent cursor-pointer">
+            React.Js Interview
+          </div>
+        </Link>
+        <p className="text-blue-400 font-bold sm:mt-10 text-sm sm:text-lg lg:text-xl">
+          Prepare to ace your
+          <span className="bg-gradient-to-t px-1 sm:text-2xl from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold">
+            React.Js interview
+          </span>
+          with AI powered assistance!
+        </p>
 
-  <p className="text-blue-400 font-medium mt-6 text-sm sm:text-lg lg:text-xl leading-relaxed">
-    This interview will test your understanding of key
-    <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold px-1">
-      React concepts
-    </span>, including:
-    <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold px-1">
-      components
-    </span>,
-    <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold px-1">
-      props
-    </span>,
-    <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold px-1">
-      state
-    </span>,
-    <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold px-1">
-      hooks
-    </span>,
-    <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold px-1">
-      context API
-    </span>, and
-    <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold px-1">
-      lifecycle methods
-    </span>.
-  </p>
-</div>
+        <p className="text-blue-400 font-medium mt-6 text-sm sm:text-lg lg:text-xl leading-relaxed">
+          This interview will test your understanding of key
+          <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold ml-1">
+            React concepts
+          </span>, including:
+          <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold ml-1">
+            components
+          </span>,
+          <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold ml-1">
+            props
+          </span>,
+          <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold ml-1">
+            state
+          </span>,
+          <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold ml-1">
+            hooks
+          </span>,
+          <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold ml-1">
+            context API
+          </span>, and
+          <span className="bg-gradient-to-t from-blue-800 to-pink-600 bg-clip-text text-transparent font-semibold ml-1">
+            lifecycle methods
+          </span>.
+        </p>
+      </div>
 
       {!isInterviewStarted && (
         <div className="about-questions lg:mr-64 md:mr-72 sm:mr-44 mt-6 sm:mt-10 px-4 sm:px-8 text-gray-200">
@@ -175,7 +175,7 @@ const ReactInterview = () => {
             <li><strong>React Context and Redux:</strong> 2 questions</li>
             <li><strong>Controlled and Uncontrolled Components: </strong> 1 questions</li>
             <li><strong>Advanced React Concepts: </strong> 1 questions</li>
-            
+
           </ul>
         </div>
       )}
@@ -197,7 +197,7 @@ const ReactInterview = () => {
 
       {isInterviewStarted && (
         <div className="ai-face mt-6 sm:mt-10 relative flex flex-col items-center text-center">
-          <img src={ai_pic} alt="AI Face" className="w-48 sm:w-60 lg:w-72 h-auto rounded-full" />
+          <img src={ai_robot} alt="AI Face" className="w-48 sm:w-60 lg:w-72 h-auto rounded-full" />
           <img
             src={sound_wave}
             alt="Sound Wave"
